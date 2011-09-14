@@ -15,7 +15,7 @@ class Stub(dict):
         def __getattr__(self, key):
             if hasattr(self.parent_stub, key):
                 value = getattr(self.parent_stub, key)
-                return StubMaker(value) if value is Stub else value # pylint: disable=E0602
+                return StubMaker(value) if value is Stub else value
             else:
                 value = Stub()
                 setattr(self.parent_stub, key, value)
