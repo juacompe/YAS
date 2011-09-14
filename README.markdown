@@ -1,6 +1,7 @@
 YAS, Yet Another Stub
 ===
 Usually, we use `mock` library for doing mock. There are 2 things we want to do with mock but we can't:  
+
 * mock a python dictionary and
 * apply a role (DCI) to a mock object.
 
