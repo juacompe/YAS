@@ -8,7 +8,7 @@ Ruxo has written a simple Stub class in BBG which is generic enough to be reused
 
 How to install
 ===
-1. pip install git+git@github.com:juacompe/YAS.git
+1. pip install git+git://github.com/juacompe/YAS.git
 
 How to run test
 ===
