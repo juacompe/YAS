@@ -6,7 +6,7 @@ def read(fname):
 
 setup(
     name = "YAS",
-    version = "0.1.0",
+    version = "0.1.1",
     author = 'Proteus Technologies',
     author_email = 'team@proteus-tech.com',
     description = ("Yet Another Stub for Python (can be used with roles library for doing DCI)"),
