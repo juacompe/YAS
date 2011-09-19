@@ -28,3 +28,19 @@ class Stub(dict):
             return value
 
 
+class ModelStub(Stub):
+    """
+    ModelStub is for stubbing object that applying roles.ModelRoleType. 
+
+    The ModelRoleType sets its Meta.proxy to True to allow a roled model to save. This class, however, setting it 
+    back to False because Django does not allow multiple inheritance of a class that has Meta.proxy as True with 
+    non-model class.
+
+    Nothing I'm talking make any senses? Fine, just use this to stub a django model.
+
+    Ref:
+    - http://groups.google.com/group/object-composition/browse_thread/thread/fbb11a1e02b68de9/96e6d27447628d8b?hl=en
+    """
+    class Meta:
+        proxy = False
+
